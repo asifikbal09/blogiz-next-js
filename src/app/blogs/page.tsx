@@ -5,6 +5,8 @@ import React from "react";
 const AllBlogsPage = async () => {
     const res = await fetch("http://localhost:5000/blogs", { cache: "no-store" });
     const blogs = await res.json();
+
+    
   return (
     <div className="w-[90%] mx-auto">
       <h1 className="text-4xl text-center my-5">
